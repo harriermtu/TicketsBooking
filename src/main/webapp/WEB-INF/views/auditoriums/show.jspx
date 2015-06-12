@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_springsource_roo_reservetickets_domain_Auditorium" object="${auditorium}" path="/auditoriums" z="ngpj2g5RWo0H1BIBzNooqotxLXc=">
+        <field:display field="numberOfRows" id="s_com_springsource_roo_reservetickets_domain_Auditorium_numberOfRows" object="${auditorium}" z="8hdd9A23xmg49IM2adpZbFirViQ="/>
+        <field:display field="numberOfPlaces" id="s_com_springsource_roo_reservetickets_domain_Auditorium_numberOfPlaces" object="${auditorium}" z="dmZ8z28mw19cVknN69HoFSzNq2I="/>
+        <field:display field="numberOfAuditorium" id="s_com_springsource_roo_reservetickets_domain_Auditorium_numberOfAuditorium" object="${auditorium}" z="urXi581sqdsPqUliRb+3tmCFMws="/>
+    </page:show>
+</div>

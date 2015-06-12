@@ -1,0 +1,8 @@
+2015-06-13 00:00:52,765 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,765 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,781 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,781 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,781 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,796 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,796 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.
+2015-06-13 00:00:52,796 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'valueOfPrice'.

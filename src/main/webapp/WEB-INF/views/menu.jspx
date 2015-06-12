@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" xmlns:sec="http://www.springframework.org/security/tags" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <sec:authorize access="hasAnyRole('ROLE_ADMIN')">
+            <menu:category id="c_ticket" z="G7VU8CiWnuCkHh/K83Evm60Xaek=">
+                <menu:item id="i_ticket_new" messageCode="global_menu_new" url="/tickets?form" z="ihGqymjWfNKoS9yitLIwy8upZkY="/>
+                <menu:item id="i_ticket_list" messageCode="global_menu_list" url="/tickets?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kWJCiMz/kWtExHSzsKHZ9hXpK3M="/>
+            </menu:category>
+            <menu:category id="c_price" z="sMt19u+GF1mBRk7bWZ6LxZJAG9w=">
+                <menu:item id="i_price_new" messageCode="global_menu_new" url="/prices?form" z="zuvha0eqUPyZK3OdFeo7wqP5Rks="/>
+                <menu:item id="i_price_list" messageCode="global_menu_list" url="/prices?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lLWJobizhUzrLz7mwLpjgViCCjU="/>
+            </menu:category>
+            <menu:category id="c_auditorium" z="4/5nWTiGHvdwP6DgTIOxez5ZiLM=">
+                <menu:item id="i_auditorium_new" messageCode="global_menu_new" url="/auditoriums?form" z="myCB12lSzR3p6jmpC6aIAnneBBk="/>
+                <menu:item id="i_auditorium_list" messageCode="global_menu_list" url="/auditoriums?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YYc/ytyelqbClU3+zXqaJQr6Uls="/>
+            </menu:category>
+            <menu:category id="c_film" z="PhAwcsmbTfnmiKwecEUsbpTXAoY=">
+                <menu:item id="i_film_new" messageCode="global_menu_new" url="/films?form" z="MXRmFuMX7EhZ3uxhIxPFI6N95q4="/>
+                <menu:item id="i_film_list" messageCode="global_menu_list" url="/films?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rBidMP01TJmPattO4VMqSZgvtjA="/>
+            </menu:category>
+            <menu:category id="c_show" z="ZXWkjOHsKOCQkZ7iL/8zXmsGMnM=">
+                <menu:item id="i_show_new" messageCode="global_menu_new" url="/shows?form" z="0L1c4g/NZbEDz+7H1q8eExFGiTg="/>
+                <menu:item id="i_show_list" messageCode="global_menu_list" url="/shows?page=1&amp;size=${empty param.size ? 10 : param.size}" z="34JIVqlVAVKhqVjlsC8jDvmtgXU="/>
+            </menu:category>
+        </sec:authorize>
+        <menu:category id="c_view" z="HjmI4Chx/kBYfS/6HjBLbCA+XpU=">
+            <menu:item id="i_view__ticketsreserve_id" url="/tickets/reserve" z="user-managed"/>
+        </menu:category>
+    </menu:menu>
+</div>

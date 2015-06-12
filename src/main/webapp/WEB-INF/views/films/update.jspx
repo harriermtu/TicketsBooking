@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_springsource_roo_reservetickets_domain_Film" modelAttribute="film" path="/films" versionField="Version" z="ab/cONZdLrRLSG4MiGNVQMv7E0I=">
+        <field:input field="title" id="c_com_springsource_roo_reservetickets_domain_Film_title" z="la02GD9jJ3tQWMXY4JYjcHM296E="/>
+        <field:select field="filmType" id="c_com_springsource_roo_reservetickets_domain_Film_filmType" items="${filmtypes}" path="filmtypes" z="kuEXMg1PKVaZjYZ4PC4Lwf4HRAk="/>
+    </form:update>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_springsource_roo_reservetickets_domain_Film" object="${film}" path="/films" z="S5MKSeofd8sOYI0/lgnDs+aQExg=">
+        <field:display field="title" id="s_com_springsource_roo_reservetickets_domain_Film_title" object="${film}" z="QbL4Yv7+HfIm4q6UJQwx03dxtAk="/>
+        <field:display field="filmType" id="s_com_springsource_roo_reservetickets_domain_Film_filmType" object="${film}" z="ifUI7MQQ7AhamcCekVbmO6DlXSI="/>
+    </page:show>
+</div>

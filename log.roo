@@ -1,0 +1,57 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-06-11 12:38:24
+project --topLevelPackage com.springsource.roo.reservetickets
+web mvc setup
+web mvc all --package ~.web
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-11 12:39:11
+jpa setup --database MSSQL --provider HIBERNATE
+enum type --class ~.domain.FilmType
+enum constant --name film_2D
+enum constant --name film_3D
+enum type --class ~.domain.PriceType
+enum constant --name reduced
+enum constant --name normal
+enum constant --name registered
+entity jpa --class ~.domain.Auditorium --testAutomatically
+// [failed] field number --type int --fieldName number
+field number --type int --fieldName numberOfRows
+field number --type int --fieldName numberOfPlaces
+entity jpa --class ~.domain.Film --testAutomatically
+field string --fieldName title
+field enum --fieldName filmType --type ~.domain.FilmType
+entity jpa --class ~.domain.Price --testAutomatically
+field number --type int --fieldName valueOfPrice
+field enum --fieldName filmType --type ~.domain.FilmType
+field enum --fieldName priceType --type ~.domain.PriceType
+entity jpa --class ~.domain.Show --testAutomatically
+field date --fieldName dateOfShow --type java.util.Date
+field reference --fieldName auditorium --type ~.domain.Auditorium
+field reference --fieldName film --type ~.domain.Film
+entity jpa --class ~.domain.Ticket --testAutomatically
+field number --type int --fieldName rowNumber
+field number --type int --fieldName placeNumber
+field reference --fieldName show --type ~.domain.Show
+field reference --fieldName price --type ~.domain.Price
+field string --fieldName reserveCheck
+security setup
+perform tests
+perform tests
+web mvc all --package ~.web
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-11 21:16:28
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-06-11 21:18:54
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-11 21:19:27
+web mvc view --path tickets --title reserve --viewName reserve
+web mvc view --path tickets --title checkfree --viewName checkfree
+web mvc view --path tickets --title createticket --viewName createticket
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-06-11 23:40:05
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-12 18:46:54
+focus --class ~.domain.Auditorium
+field number --type int --fieldName numberOfAuditorium
+perform test
+perform test
+perform tests 
+perform test
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-06-12 21:16:14
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-12 23:00:54
+perform tests
+perform test
+perform tests

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_springsource_roo_reservetickets_domain_Price" modelAttribute="price" path="/prices" versionField="Version" z="DVxoynF7FJ+DHIBr7wrvbSEz+i8=">
+        <field:input field="valueOfPrice" id="c_com_springsource_roo_reservetickets_domain_Price_valueOfPrice" z="4njLiGguMyUcKJaGjmF3NMAgv24="/>
+        <field:select field="filmType" id="c_com_springsource_roo_reservetickets_domain_Price_filmType" items="${filmtypes}" path="filmtypes" z="NNXZJ3qawRaAVZCod1j3RB+4SgM="/>
+        <field:select field="priceType" id="c_com_springsource_roo_reservetickets_domain_Price_priceType" items="${pricetypes}" path="pricetypes" z="lkY49NjgosXMsifBbxY5kZdTSe4="/>
+    </form:update>
+</div>

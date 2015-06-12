@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_springsource_roo_reservetickets_domain_Ticket" object="${ticket}" path="/tickets" z="dLwi0Z/c+Bybx7uoGNU0Bhj1ecQ=">
+        <field:display field="rowNumber" id="s_com_springsource_roo_reservetickets_domain_Ticket_rowNumber" object="${ticket}" z="UVucVA8LK2mhjf1CzPNoG6UCpQY="/>
+        <field:display field="placeNumber" id="s_com_springsource_roo_reservetickets_domain_Ticket_placeNumber" object="${ticket}" z="vzF7PaVp+Mm+EAcU7hePZSavR4E="/>
+        <field:display field="show" id="s_com_springsource_roo_reservetickets_domain_Ticket_show" object="${ticket}" z="cJhK9+97WTkC/B7dYGDIHeWTZ4U="/>
+        <field:display field="price" id="s_com_springsource_roo_reservetickets_domain_Ticket_price" object="${ticket}" z="EYI1cIXdd43ViQ6jcBh7D+y93TQ="/>
+        <field:display field="reserveCheck" id="s_com_springsource_roo_reservetickets_domain_Ticket_reserveCheck" object="${ticket}" z="s2Nq6NNDeyFaLXFprW4hoVZX9+E="/>
+    </page:show>
+</div>

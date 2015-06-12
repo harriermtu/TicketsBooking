@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <jsp:output omit-xml-declaration="yes"/>
+  <spring:message code="label_tickets_reserve" htmlEscape="false" var="title"/>
+  <util:panel id="title" title="${title}">
+    <spring:message code="application_name" htmlEscape="false" var="app_name"/>
+    <h3>
+      <spring:message arguments="${app_name}" code="welcome_titlepane"/>
+    </h3>
+    
+    <c:if test="${pageContext['request'].userPrincipal != null}">
+    <div id="userName" value="${pageContext['request'].userPrincipal.name}">
+	${pageContext['request'].userPrincipal.name}
+    </div>
+    </c:if>
+    
+        <c:if test="${pageContext['request'].userPrincipal == null}">
+    <select id="selectPrice">
+    	<option value="1">reduced</option>;
+		<option value="2">normal</option>;
+    </select>
+    </c:if>
+    
+<select id="selectShow" onchange="generatePlace()">
+			<c:forEach var="listValue" items="${showList}">
+			<!-- wystarczy zwracac sie po kropce -->
+				<option value="${listValue}///${listValue.id}///${listValue.film.filmType}">${listValue.dateOfShow} ${listValue.film.title} ${listValue.film.filmType}</option>
+			</c:forEach>		
+</select>
+
+<button onclick="myReserve()">createTicket</button>
+    <br></br> Reserve Password: <input type = "text" id = "passReserve"> </input>
+
+<div id="div1"></div>
+
+<script>
+	//document.getElementById("selectSeans").addEventListener("load", myFunction3());
+	<![CDATA[
+
+	window.onload = generatePlace();
+	function generatePlace() {
+		//alert(JSON.stringify(getNumbers()));
+		//alert(JSON.stringify(tableOfIdRowsPlaces["id"]));
+		if (document.getElementById("userName")!=null) document.getElementById("passReserve").value = document.getElementById("userName").getAttribute("value");
+		var i=0;
+		var div1 = document.getElementById("div1");
+		document.getElementById("div1").innerHTML = "";
+		//alert(JSON.stringify(getNumbers()));
+		//alert(JSON.stringify(tableOfIdRowsPlaces["id"]));
+		
+		var tableOfIdRowsPlaces = getNumbers();
+		var show = tableOfIdRowsPlaces["id"];
+		var numberOfPlaces = tableOfIdRowsPlaces["numberOfPlaces"];
+		var numberOfRows = tableOfIdRowsPlaces["numberOfRows"];
+
+		for (var t = 1; t <= numberOfRows; t++) {
+			for (var k = 1; k <= numberOfPlaces; k++){
+    			var x = document.createElement("INPUT");
+    			x.setAttribute("type", "checkbox");
+    			x.setAttribute("id", "x" + t + k);
+    			div1.appendChild(x);    			
+    			var y = document.createElement("INPUT");
+    			y.setAttribute("type", "textbox");
+    			div1.appendChild(y);
+    			y.id="y" + t + k;
+    			y.value=t + " " + k;
+    			y.disabled = true;
+    			y.size=1;
+    			checkFreeTicket(t,k,id);
+			}
+			
+			div1.appendChild(document.createElement("br"));
+		}
+	}
+	
+	function checkFreeTicket(row, place, id){
+		var a;
+    	$.ajax({
+    		   url:"checkfree?row="+row+"&place="+place+"&id="+id,
+    		   type:'GET',
+    		   success: function(data){
+    			   a=$(data).find('#checkFree').html();
+    			   if (a.valueOf() == "false"){document.getElementById("x"+row+place).disabled=true; document.getElementById("x"+row+place).checked=false; document.getElementById("y"+row+place).value="NIED";}
+    		   }
+    		});
+	}
+	
+	function checkFreeTicket2(row, place, id){
+		var show = document.getElementById("selectShow").value;
+		var priceType = $('#selectPrice option:selected').text();
+		var filmType = show.split("///")[2];
+		
+		var logged;
+		if (document.getElementById("userName")!=null) logged = true;
+		else logged = false;
+
+		if (logged && filmType=="film_2D") price=83;
+		if (logged && filmType=="film_3D") price=84;
+		if (!logged && filmType=="film_2D" && priceType=="reduced") price=85;
+		if (!logged && filmType=="film_2D" && priceType=="normal") price=86;
+		if (!logged && filmType=="film_3D" && priceType=="reduced") price=87;
+		if (!logged && filmType=="film_3D" && priceType=="normal") price=88;
+
+		var password = document.getElementById("passReserve").value;
+		
+    	$.ajax({
+    		   url:"checkfree?row="+row+"&place="+place+"&id="+id,
+    		   type:'GET',
+    		   success: function(data){
+    			   a=$(data).find('#checkFree').html();
+    			   if (a.toString() == "false"){
+    				   alert("Unfortunately, one of Your tickets have been booked by another user, others are reserved.");
+    				   //location.reload();
+					}
+    			   else {
+    				   $.ajax({
+			    		   url:"createticket",
+			    		   type:'POST',
+			    		   data: { row:row, place:place, show:id, price:price, password:password },
+			    		   success: function(data){
+			    			   //var a=$(data).find('#reserved').html();
+			    			   //alert(a);
+			    		   }
+			    		});
+					}
+    			   location.reload();
+    			   }
+    		});
+    	//location.reload();
+	}
+	
+	function myReserve(){
+		
+		var tableOfIdRowsPlaces = getNumbers();
+		var show = tableOfIdRowsPlaces["id"];
+		var numberOfPlaces = tableOfIdRowsPlaces["numberOfPlaces"];
+		var numberOfRows = tableOfIdRowsPlaces["numberOfRows"];
+		for (var t = 1; t <= numberOfRows; t++) {
+			for (var k = 1; k <= numberOfPlaces; k++){
+				if (document.getElementById("x"+t+k).checked){
+					checkFreeTicket2(t,k,id);
+					} 
+			}
+		}
+	}
+	
+	function myCreatePOST(){
+		
+		var price;
+		var show = document.getElementById("selectShow").value;
+		var priceType = $('#selectPrice option:selected').text();
+		id = show.split("///")[1];
+		var filmType = show.split("///")[2];
+
+		var tableOfIdRowsPlaces = getNumbers();
+		var numberOfPlaces = tableOfIdRowsPlaces["numberOfPlaces"];
+		var numberOfRows = tableOfIdRowsPlaces["numberOfRows"];
+
+		var logged;
+		if (document.getElementById("userName")!=null) logged = true;
+		else logged = false;
+
+		if (logged && filmType=="film_2D") price=83;
+		if (logged && filmType=="film_3D") price=84;
+		if (!logged && filmType=="film_2D" && priceType=="reduced") price=85;
+		if (!logged && filmType=="film_2D" && priceType=="normal") price=86;
+		if (!logged && filmType=="film_3D" && priceType=="reduced") price=87;
+		if (!logged && filmType=="film_3D" && priceType=="normal") price=88;
+
+		var password = document.getElementById("passReserve").value;
+		for (var t = 1; t <= numberOfRows; t++) {
+			for (var k = 1; k <= numberOfPlaces; k++){
+				if (document.getElementById("x"+t+k).checked){
+					$.ajax({
+			    		   url:"createticket",
+			    		   type:'POST',
+			    		   data: { row:t, place:k, show:id, price:price, password:password },
+			    		   success: function(data){
+			    			   var a=$(data).find('#reserved').html();
+			    			   alert(a);
+			    		   }
+			    		});
+					} 
+			}
+		}
+		location.reload();
+	}
+	
+	function getNumbers(){
+		var show = document.getElementById("selectShow").value;
+		id = show.split("///")[1];
+		var myReg = /numberOfRows=(.*?),/;	
+		var numberOfRows = myReg.exec(show)[1];
+		myReg = /numberOfPlaces=(.*?),/;
+		var numberOfPlaces = myReg.exec(show)[1];
+		return {
+			"id" : id,
+			"numberOfRows" : numberOfRows,
+			"numberOfPlaces" : numberOfPlaces
+		};
+	}
+	
+	]]>
+	
+	</script>
+
+  </util:panel>
+</div>

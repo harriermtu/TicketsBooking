@@ -1,0 +1,36 @@
+2015-06-13 00:00:51,323 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: alter table Auditorium add numberOfAuditorium int not null
+2015-06-13 00:00:51,323 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'numberOfAuditorium' cannot be added to non-empty table 'Auditorium' because it does not satisfy these conditions.
+2015-06-13 00:00:51,345 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: alter table Auditorium add numberOfPlaces int not null
+2015-06-13 00:00:51,345 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'numberOfPlaces' cannot be added to non-empty table 'Auditorium' because it does not satisfy these conditions.
+2015-06-13 00:00:51,349 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: alter table Auditorium add numberOfRows int not null
+2015-06-13 00:00:51,349 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'numberOfRows' cannot be added to non-empty table 'Auditorium' because it does not satisfy these conditions.
+2015-06-13 00:00:51,400 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: alter table Price add valueOfPrice int not null
+2015-06-13 00:00:51,400 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'valueOfPrice' cannot be added to non-empty table 'Price' because it does not satisfy these conditions.
+2015-06-13 00:00:51,462 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: alter table Ticket add placeNumber int not null
+2015-06-13 00:00:51,462 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'placeNumber' cannot be added to non-empty table 'Ticket' because it does not satisfy these conditions.
+2015-06-13 00:00:51,462 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000388: Unsuccessful: alter table Ticket add rowNumber int not null
+2015-06-13 00:00:51,462 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaUpdate - ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'rowNumber' cannot be added to non-empty table 'Ticket' because it does not satisfy these conditions.
+2015-06-13 00:00:52,398 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,399 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,399 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,420 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,420 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,420 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,431 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,431 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,431 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,436 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,437 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,437 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.
+2015-06-13 00:00:52,455 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfAuditorium'.
+2015-06-13 00:00:52,455 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfPlaces'.
+2015-06-13 00:00:52,455 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'numberOfRows'.

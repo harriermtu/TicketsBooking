@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_springsource_roo_reservetickets_domain_Show" object="${show}" path="/shows" z="07f+qRqnpWZ0Co1wM3B0zrMNg84=">
+        <field:display date="true" dateTimePattern="${show_dateofshow_date_format}" field="dateOfShow" id="s_com_springsource_roo_reservetickets_domain_Show_dateOfShow" object="${show}" z="7psPJh2NJ9+fgcRcKPv3CMFA4AY="/>
+        <field:display field="auditorium" id="s_com_springsource_roo_reservetickets_domain_Show_auditorium" object="${show}" z="bO3LBwVvE04lYktWVwFAMOzHWW4="/>
+        <field:display field="film" id="s_com_springsource_roo_reservetickets_domain_Show_film" object="${show}" z="7D+Qg06vb8pJthxsJJi9UvOQS/w="/>
+    </page:show>
+</div>

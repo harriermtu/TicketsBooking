@@ -1,0 +1,16 @@
+2015-06-13 00:00:52,906 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,906 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,906 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,906 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,906 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,906 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,921 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.
+2015-06-13 00:00:52,937 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'placeNumber'.
+2015-06-13 00:00:52,937 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Invalid column name 'rowNumber'.

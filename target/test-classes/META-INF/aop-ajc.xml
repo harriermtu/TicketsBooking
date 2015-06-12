@@ -1,0 +1,25 @@
+<aspectj>
+<aspects>
+<aspect name="com.springsource.roo.reservetickets.domain.PriceIntegrationTest_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.TicketIntegrationTest_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.AuditoriumIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.springsource.roo.reservetickets.domain.PriceDataOnDemand_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.TicketDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.springsource.roo.reservetickets.domain.AuditoriumDataOnDemand_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.ShowDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.springsource.roo.reservetickets.domain.FilmDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.springsource.roo.reservetickets.domain.ShowIntegrationTest_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.FilmIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.springsource.roo.reservetickets.domain.ShowIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.springsource.roo.reservetickets.domain.AuditoriumIntegrationTest_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.TicketIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.springsource.roo.reservetickets.domain.ShowDataOnDemand_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.PriceIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.springsource.roo.reservetickets.domain.TicketDataOnDemand_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.PriceDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.springsource.roo.reservetickets.domain.AuditoriumDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.springsource.roo.reservetickets.domain.FilmDataOnDemand_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.FilmIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

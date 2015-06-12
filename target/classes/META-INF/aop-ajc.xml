@@ -1,0 +1,36 @@
+<aspectj>
+<aspects>
+<aspect name="com.springsource.roo.reservetickets.domain.Price_Roo_Jpa_Entity"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Price_Roo_JavaBean"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Auditorium_Roo_Jpa_Entity"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Auditorium_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Price_Roo_ToString"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Show_Roo_JavaBean"/>
+<aspect name="com.springsource.roo.reservetickets.web.TicketController_Roo_Controller"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Auditorium_Roo_JavaBean"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Price_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.web.FilmController_Roo_Controller"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Auditorium_Roo_ToString"/>
+<aspect name="com.springsource.roo.reservetickets.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Show_Roo_ToString"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Film_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Film_Roo_Jpa_Entity"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Ticket_Roo_ToString"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Ticket_Roo_JavaBean"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Ticket_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.springsource.roo.reservetickets.web.AuditoriumController_Roo_Controller"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Ticket_Roo_Jpa_Entity"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Show_Roo_Jpa_Entity"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Show_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Film_Roo_ToString"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Show_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Ticket_Roo_Configurable"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Film_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Film_Roo_JavaBean"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Auditorium_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.springsource.roo.reservetickets.web.PriceController_Roo_Controller"/>
+<aspect name="com.springsource.roo.reservetickets.domain.Price_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.springsource.roo.reservetickets.web.ShowController_Roo_Controller"/>
+</aspects>
+</aspectj>
+

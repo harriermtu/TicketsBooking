@@ -1,0 +1,1 @@
+2015-06-12 23:01:37,504 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - The DELETE statement conflicted with the REFERENCE constraint "FK_3kl1eqnv21fq30qllf16e3ix0". The conflict occurred in database "ReserveTickets", table "dbo.show", column 'film'.

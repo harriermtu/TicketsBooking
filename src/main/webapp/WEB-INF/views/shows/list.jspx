@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_springsource_roo_reservetickets_domain_Show" items="${shows}" z="EJRN9GNldiq9kt0xBP2IMp63zBk=">
+        <table:table data="${shows}" id="l_com_springsource_roo_reservetickets_domain_Show" path="/shows" z="DsYrl30NIIAG0AyKLRhuktiWt08=">
+            <table:column date="true" dateTimePattern="yyyy-MM-dd hh:mm" id="c_com_springsource_roo_reservetickets_domain_Show_dateOfShow" property="dateOfShow" z="user-managed"/>
+            <table:column id="c_com_springsource_roo_reservetickets_domain_Show_auditorium" property="auditorium" z="arjAi5GWvFXvWDggF2m0CDbPZT0="/>
+            <table:column id="c_com_springsource_roo_reservetickets_domain_Show_film" property="film" z="WJMTJrpqfM9VkA+QUCDU9MaBCqg="/>
+        </table:table>
+    </page:list>
+</div>
